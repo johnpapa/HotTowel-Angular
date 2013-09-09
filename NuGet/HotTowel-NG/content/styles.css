@@ -1,0 +1,609 @@
+﻿.ng-cloak {
+    display: none !important;
+ }
+
+/*#region Override background color theme */
+body {
+    background-color: #FFF;
+}
+
+.navbar-inverse .btn-navbar.active {
+    background-color: #333 \9;
+}
+
+.navbar-inner {
+    background-color: #333 !important;
+}
+
+.sidebar .navi > li > a {
+    background-color: #333 !important;
+}
+
+.sidebar .navi li ul li a {
+    color: #fff;
+}
+
+    .sidebar .navi li ul li a:hover {
+        color: #52b9e9;
+    }
+
+    .sidebar .navi li ul li a:disabled {
+        color: #999;
+    }
+
+.navbar-inverse .btn-navbar {
+    background-color: #333;
+}
+
+    .navbar-inverse .btn-navbar:hover {
+        background-color: #333;
+    }
+
+.sidebar {
+    margin-top: -2px;
+}
+
+    .sidebar .sidebar-inner {
+        background-color: #333;
+    }
+
+.sidebar-filler {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    width: 230px;
+}
+
+/*#endregion */
+
+
+select > option {
+    color: black;
+}
+
+.widget .padd {
+    padding: 16px 8px;
+}
+
+    .widget .padd.padd-tight {
+        padding: 6px;
+    }
+
+.list-flow.list-flow-tight {
+    width: 90px;
+}
+
+
+.map {
+    height: 228px;
+}
+
+.btn > i {
+    margin-right: 8px;
+}
+
+.btn {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+    .btn.btn-notext > i {
+        margin-right: 0;
+    }
+
+small {
+    font-size: 14px;
+}
+
+.text-subtle {
+    color: #b7b7b7;
+}
+
+.page-title-subtle {
+    color: white;
+}
+
+.page-title {
+    color: #EEE;
+    margin-right: 12px;
+}
+
+.right {
+    clear: right;
+    float: right;
+}
+
+.widget-content .padd:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #52b9e9;
+}
+
+    .widget-content .padd:hover * {
+        color: white;
+    }
+
+.list-flow {
+    margin: 6px;
+    float: left;
+    width: 110px;
+    height: 120px;
+    border-bottom: solid 0 transparent;
+    padding: 1.5% .5%;
+}
+
+.name-stack h5 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 18px !important;
+}
+
+
+.search-query {
+    margin: 2px auto 8px auto !important; 
+}
+
+.user .user-pic {
+    display: block;
+    margin: auto;
+}
+
+.user .user-details {
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.widget-content {
+    padding: 1em;
+}
+
+.stacked {
+    float: none !important;
+    display: block;
+    margin: auto;
+}
+
+.navbar .brand {
+    background: url(/content/images/icon.png) no-repeat left center !important;
+    margin-left: -6px;
+}
+
+.navbar .brand-title {
+    margin-left: 30px;
+}
+
+.navbar-logo img {
+    height: 20px;
+}
+
+.today-datas li {
+    padding: 20px 14px;
+}
+
+/*#region Splash */
+#splash-page {
+    z-index: 99999 !important;
+}
+
+    #splash-page .bar {
+        width: 100%;
+    }
+
+.page-splash {
+    z-index: 99999 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    -ms-opacity: .9;
+    opacity: .9;
+    pointer-events: auto;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+
+.page-splash-message {
+    text-align: center;
+    margin: 20% auto 0 auto;
+    font-size: 400%;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    -webkit-text-shadow: 2px 2px #000000;
+    -ms-text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F58A00;
+    padding: 0;
+}
+
+    .page-splash-message.page-splash-message-subtle {
+        margin: 30% auto 0 auto;
+        font-size: 200%;
+    }
+
+.icon-asterisk.icon-asterisk-large {
+    font-size: 180%;
+    vertical-align: middle;
+    color: #F58A00;
+}
+
+.icon-asterisk.icon-asterisk-alert {
+    color: #F58A00;
+}
+
+.icon-asterisk-inline {
+    padding: 0 4px 0 0;
+}
+
+
+.progress,
+.page-progress-bar {
+    margin: 30px 10% !important;
+}
+
+.spinner {
+    margin: 20% auto 0 auto;
+    left: auto;
+    top: auto !important;
+}
+/*#endregion*/
+
+table th > a {
+    font-weight: bold;
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+    cursor: pointer;
+}
+
+
+.widget-content.referrer {
+    border-width: 0;
+}
+
+.carousel-caption {
+    position: relative;
+    padding: 15px;
+    background: #333333;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    margin: 0 auto;
+    height: 140px;
+}
+
+.carousel-control {
+    -ms-border-radius: 23px !important;
+    border-radius: 23px !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/*#region wrapper for angular ng-include and ng-view animations*/
+.view-container {
+    position: relative;
+    overflow: hidden;
+}
+/*#endregion */
+
+/*#region Angular ng-include and ui-view shuffle animations*/
+
+.shuffle-animation.ng-enter,
+.shuffle-animation.ng-leave {
+    position: relative;
+    /*display: block!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;*/
+}
+
+.shuffle-animation.ng-enter {
+    -moz-transition: ease-out all 0.3s 0.4s;
+    -o-transition: ease-out all 0.3s 0.4s;
+    -webkit-transition: ease-out all 0.3s 0.4s;
+    transition: ease-out all 0.3s 0.4s;
+    left: 2em;
+    -ms-opacity: 0;
+    opacity: 0;
+}
+
+    .shuffle-animation.ng-enter.ng-enter-active {
+        left: 0;
+        -ms-opacity: 1;
+        opacity: 1;
+    }
+
+.shuffle-animation.ng-leave {
+    -moz-transition: 0.3s ease-out all;
+    -o-transition: 0.3s ease-out all;
+    -webkit-transition: 0.3s ease-out all;
+    transition: 0.3s ease-out all;
+    left: 0;
+    -ms-opacity: 1;
+    opacity: 1;
+}
+
+    .shuffle-animation.ng-leave.ng-leave-active {
+        left: 2em;
+        -ms-opacity: 0;
+        opacity: 0;
+    }
+/*#endregion*/
+
+/*#region Angular ng-include fader animation */
+.fader-animation.ng-enter,
+.fader-animation.ng-leave {
+    position: relative;
+}
+
+    .fader-animation.ng-enter,
+    .fader-animation.ng-enter.ng-enter-active {
+        -webkit-transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s 0.6s !important;
+        -moz-transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s 0.6s !important;
+        -o-transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s 0.6s !important;
+        transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s 0.6s !important;
+    }
+
+.fader-animation.ng-enter {
+    -ms-opacity: 0;
+    opacity: 0;
+}
+
+    .fader-animation.ng-enter.ng-enter-active {
+        -ms-opacity: 1;
+        opacity: 1;
+    }
+
+.fader-animation.ng-leave {
+    -webkit-transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s;
+    -moz-transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s;
+    -o-transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s;
+    transition: cubic-bezier(0.250, 0.460, 0.450, 0.940) all 0.5s;
+}
+
+.fader-animation.ng-leave {
+    -ms-opacity: 1;
+    opacity: 1;
+}
+
+    .fader-animation.ng-leave.ng-leave-active {
+        -ms-opacity: 0;
+        opacity: 0;
+    }
+/*#endregion*/
+
+
+/*#region Angular ng-show dissolve animation */
+/*ng-class active too*/
+.fade-selection-animation.class-add,
+.fade-selection-animation.class-remove {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    padding: 10px;
+}
+
+.fade-selection-animation.class-add {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+}
+
+.fade-selection-animation.class-remove {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s;
+}
+
+    .fade-selection-animation.class-remove.class-add-active,
+    .fade-selection-animation.class-add {
+        -ms-opacity: 1;
+        opacity: 1;
+    }
+
+        .fade-selection-animation.class-add.class-add-active,
+        .fade-selection-animation.class-remove {
+            -ms-opacity: 0;
+            opacity: 0;
+        }
+
+/*#endregion */
+
+
+/*#region Angular ng-show dissolve animation */
+
+/*
+ * .my-element.ng-hide-add, .my-element.ng-hide-remove {
+ *   transition:0.5s linear all;
+ *   display:block!important;
+ * }
+ *
+ * .my-element.ng-hide-add { ... }
+ * .my-element.ng-hide-add.ng-hide-add-active { ... }
+ * .my-element.ng-hide-remove { ... }
+ * .my-element.ng-hide-remove.ng-hide-remove-active { ... }
+ */
+
+.dissolve-animation.ng-hide-remove {
+    display: inline!important;
+}
+
+.dissolve-animation.ng-hide-remove,
+.dissolve-animation.ng-hide-add {
+    -webkit-transition: 0.3s linear all;
+    -moz-transition: 0.3s linear all;
+    -o-transition: 0.3s linear all;
+    transition: 0.3s linear all;
+}
+
+    .dissolve-animation.ng-hide-remove.ng-hide-remove-active,
+    .dissolve-animation.ng-hide-add {
+        -ms-opacity: 1;
+        opacity: 1;
+    }
+
+        .dissolve-animation.ng-hide-add.ng-hide-add-active,
+        .dissolve-animation.ng-hide-remove {
+            -ms-opacity: 0;
+            opacity: 0;
+        }
+
+/*#endregion */
+
+
+/*#region toastr */
+#toast-container.toast-top-full-width > div, #toast-container.toast-bottom-full-width > div {
+    margin: 4px auto;
+}
+/*#endregion */
+
+/*#region Responsive */
+
+@media (max-width: 979px) {
+    .sidebar-filler {
+        width: 200px;
+    }
+
+    .nav-collapse {
+        clear: none;
+    }
+
+        .nav-collapse .nav > li {
+            float: left;
+        }
+
+    .navbar .btn-navbar {
+        display: none;
+    }
+
+    .nav-collapse,
+    .nav-collapse.collapse {
+        height: inherit;
+        overflow: inherit;
+    }
+
+    .page-splash-message {
+        font-size: 300%;
+    }
+
+    .btn-group.pull-right {
+        float: none;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-filler {
+        display: none;
+    }
+
+    .nav-collapse {
+        clear: both;
+    }
+
+        .nav-collapse .nav > li {
+            float: none;
+        }
+
+    .navbar .btn-navbar {
+        display: block;
+    }
+
+    .nav-collapse,
+    .nav-collapse.collapse {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .page-splash-message {
+        font-size: 200%;
+        margin: 40% auto 0 auto;
+    }
+
+        .page-splash-message.page-splash-message-subtle {
+            font-size: 150%;
+        }
+
+    .sidebar .sidebar-inner {
+        height: inherit;
+    }
+}
+
+@media (max-width: 320px) {
+    .today-datas li {
+        padding: 1em .5em;
+        line-height: 1em;
+    }
+
+        .today-datas li i {
+            font-size: 2em;
+        }
+
+        .today-datas li .datas-text span {
+            font-size: 1em;
+        }
+
+    .btn {
+        margin: .2em;
+        width: 7em;
+    }
+
+    .btn-group > .btn {
+        display: block;
+        width: 7em;
+        margin: .2em;
+    }
+
+    input,
+    select {
+        width: 85%;
+    }
+
+    textarea {
+        width: 80%;
+    }
+
+    .img-polaroid.user-pic {
+        width: 5em;
+    }
+
+    .user .user-details {
+        margin-left: 7em;
+        margin-right: .5em;
+    }
+
+    h3 {
+        font-size: 1.5em !important;
+        line-height: 1.2em !important;
+    }
+}
+
+/*#endregion */
