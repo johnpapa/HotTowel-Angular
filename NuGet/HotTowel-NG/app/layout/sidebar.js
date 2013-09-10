@@ -3,9 +3,9 @@
     
     var controllerId = 'sidebar';
     angular.module('app').controller(controllerId,
-        ['$location', '$route', 'bootstrap.dialog', 'common', 'config', 'datacontext', 'routes', sidebar]);
+        ['$route', 'config', 'routes', sidebar]);
 
-    function sidebar($location, $route, bsDialog, common, config, datacontext, routes) {
+    function sidebar($route, config, routes) {
         var vm = this;
 
         vm.isCurrent = isCurrent;

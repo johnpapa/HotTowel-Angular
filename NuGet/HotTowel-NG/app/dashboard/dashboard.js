@@ -4,6 +4,9 @@
     angular.module('app').controller(controllerId, ['common', 'datacontext', dashboard]);
 
     function dashboard(common, datacontext) {
+        var getLogFn = common.logger.getLogFn;
+        var log = getLogFn(controllerId);
+
         var vm = this;
         vm.news = {
             title: 'Hot Towel NG',
@@ -16,7 +19,8 @@
 
         function activate() {
             var promises = [getPeopleCount()];
-            common.activateController(promises, controllerId);
+            common.activateController(promises, controllerId)
+                .then(function () { log('Activated Dashboard View'); });
         }
         
         function getPeopleCount() {

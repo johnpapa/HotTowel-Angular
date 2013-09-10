@@ -3,14 +3,13 @@
 
     var serviceId = 'datacontext';
     angular.module('app').factory(serviceId,
-        ['common', 'entityManagerFactory', datacontext]);
+        ['common', datacontext]);
 
-    function datacontext(common, emFactory) {
+    function datacontext(common) {
         var getLogFn = common.logger.getLogFn;
         var log = getLogFn(serviceId);
         var logError = getLogFn(serviceId, 'error');
         var logSuccess = getLogFn(serviceId, 'success');
-        var manager = emFactory.newManager();
         var $q = common.$q;
 
         var service = {
