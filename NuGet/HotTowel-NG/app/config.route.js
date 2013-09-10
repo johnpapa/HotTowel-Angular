@@ -30,14 +30,13 @@
                     }
                 }
             }, {
-                url: '/settings',
+                url: '/admin',
                 config: {
-                    controller: 'settings',
-                    title: 'settings',
-                    templateUrl: 'app/settings/settings.html',
+                    title: 'admin',
+                    templateUrl: 'app/admin/admin.html',
                     settings: {
                         nav: 2,
-                        content: '<i class="icon-calendar"></i> Settings'
+                        content: '<i class="icon-lock"></i> Admin'
                     }
                 }
             }

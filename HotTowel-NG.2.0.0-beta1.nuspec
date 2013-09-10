@@ -36,6 +36,8 @@ Hot Towel NG: Because you don't want to go to the SPA without one!
         </dependencies>
     </metadata>
     <files>
+        <file src="NuGet\HotTowel-NG\app\admin\admin.html" target="content\app\admin\admin.html" />
+        <file src="NuGet\HotTowel-NG\app\admin\admin.js" target="content\app\admin\admin.js" />
         <file src="NuGet\HotTowel-NG\app\common\bootstrap\bootstrap.dialog.js" target="content\app\common\bootstrap\bootstrap.dialog.js" />
         <file src="NuGet\HotTowel-NG\app\common\common.js" target="content\app\common\common.js" />
         <file src="NuGet\HotTowel-NG\app\common\logger.js" target="content\app\common\logger.js" />
@@ -50,8 +52,6 @@ Hot Towel NG: Because you don't want to go to the SPA without one!
         <file src="NuGet\HotTowel-NG\app\layout\widgetheader.html" target="content\app\layout\widgetheader.html" />
         <file src="NuGet\HotTowel-NG\app\services\datacontext.js" target="content\app\services\datacontext.js" />
         <file src="NuGet\HotTowel-NG\app\services\directives.js" target="content\app\services\directives.js" />
-        <file src="NuGet\HotTowel-NG\app\settings\settings.html" target="content\app\settings\settings.html" />
-        <file src="NuGet\HotTowel-NG\app\settings\settings.js" target="content\app\settings\settings.js" />
         <file src="NuGet\HotTowel-NG\app\app.js" target="content\app\app.js" />
         <file src="NuGet\HotTowel-NG\app\config.exceptionHandler.js" target="content\app\config.exceptionHandler.js" />
         <file src="NuGet\HotTowel-NG\app\config.js" target="content\app\config.js" />
