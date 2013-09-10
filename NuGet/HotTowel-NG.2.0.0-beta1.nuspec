@@ -43,7 +43,7 @@ Hot Towel NG: Because you don't want to go to the SPA without one!
         <file src="content\app\common\logger.js" target="content\app\common\logger.js" />
         <file src="content\app\common\spinner.js" target="content\app\common\spinner.js" />
         <file src="content\app\dashboard\dashboard.html" target="content\app\dashboard\dashboard.html" />
-        <file src="HotTowel-NG\app\dashboard\dashboard.js" target="content\app\dashboard\dashboard.js" />
+        <file src="content\app\dashboard\dashboard.js" target="content\app\dashboard\dashboard.js" />
         <file src="content\app\layout\shell.html" target="content\app\layout\shell.html" />
         <file src="content\app\layout\shell.js" target="content\app\layout\shell.js" />
         <file src="content\app\layout\sidebar.html" target="content\app\layout\sidebar.html" />
@@ -53,12 +53,12 @@ Hot Towel NG: Because you don't want to go to the SPA without one!
         <file src="content\app\services\datacontext.js" target="content\app\services\datacontext.js" />
         <file src="content\app\services\directives.js" target="content\app\services\directives.js" />
         <file src="content\app\services\entityManagerFactory.js" target="content\app\services\entityManagerFactory.js" />
-        <file src="content\app\settings\settings.html" target="content\app\settings\settings.html" />
+        <file src="HotTowel-NG\app\settings\settings.html" target="content\app\settings\settings.html" />
         <file src="content\app\settings\settings.js" target="content\app\settings\settings.js" />
-        <file src="HotTowel-NG\app\app.js" target="content\app\app.js" />
+        <file src="content\app\app.js" target="content\app\app.js" />
         <file src="content\app\config.exceptionHandler.js" target="content\app\config.exceptionHandler.js" />
         <file src="content\app\config.js" target="content\app\config.js" />
-        <file src="HotTowel-NG\app\config.route.js" target="content\app\config.route.js" />
+        <file src="content\app\config.route.js" target="content\app\config.route.js" />
         <file src="content\App_Start\_._" target="content\App_Start\_._" />
         <file src="content\content\images\AngularJS-small.png" target="content\content\images\AngularJS-small.png" />
         <file src="content\content\images\breezelogo.png" target="content\content\images\breezelogo.png" />
@@ -71,6 +71,6 @@ Hot Towel NG: Because you don't want to go to the SPA without one!
         <file src="content\scripts\breeze.saveErrorExtensions.js" target="content\scripts\breeze.saveErrorExtensions.js" />
         <file src="content\scripts\breeze.to$q.js" target="content\scripts\breeze.to$q.js" />
         <file src="content\favicon.ico" target="content\favicon.ico" />
-        <file src="HotTowel-NG\index.html" target="content\index.html" />
+        <file src="content\index.html" target="content\index.html" />
     </files>
 </package>
