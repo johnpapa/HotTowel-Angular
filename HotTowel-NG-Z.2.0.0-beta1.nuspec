@@ -25,6 +25,7 @@ Hot Towel NG: Because you don't want to go to the SPA without one!
         <tags>spa jquery angular toastr javascript moment fontawsome  breeze webapi</tags>
         <dependencies>
             <dependency id="Breeze.WebApi" version="1.4.1" />
+            <dependency id="HotTowel-NG" version="2.0.0-beta1" />
         </dependencies>
     </metadata>
     <files>
