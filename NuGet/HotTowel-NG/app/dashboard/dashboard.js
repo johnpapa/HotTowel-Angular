@@ -7,7 +7,7 @@
         var vm = this;
         vm.news = {
             title: 'Hot Towel NG',
-            description: 'Hot Towel NG is a SPA template for Angular and Breeze developers.'
+            description: 'Hot Towel NG is a SPA template for Angular developers.'
         };
         vm.peopleCount = 0;
         vm.title = 'Dashboard';

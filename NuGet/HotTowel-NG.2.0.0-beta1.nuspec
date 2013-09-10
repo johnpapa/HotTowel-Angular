@@ -38,39 +38,39 @@ Hot Towel NG: Because you don't want to go to the SPA without one!
         </dependencies>
     </metadata>
     <files>
-        <file src="HotTowel-NG\app\common\bootstrap\bootstrap.dialog.js" target="content\app\common\bootstrap\bootstrap.dialog.js" />
-        <file src="HotTowel-NG\app\common\common.js" target="content\app\common\common.js" />
-        <file src="HotTowel-NG\app\common\logger.js" target="content\app\common\logger.js" />
-        <file src="HotTowel-NG\app\common\spinner.js" target="content\app\common\spinner.js" />
-        <file src="HotTowel-NG\app\dashboard\dashboard.html" target="content\app\dashboard\dashboard.html" />
+        <file src="content\app\common\bootstrap\bootstrap.dialog.js" target="content\app\common\bootstrap\bootstrap.dialog.js" />
+        <file src="content\app\common\common.js" target="content\app\common\common.js" />
+        <file src="content\app\common\logger.js" target="content\app\common\logger.js" />
+        <file src="content\app\common\spinner.js" target="content\app\common\spinner.js" />
+        <file src="content\app\dashboard\dashboard.html" target="content\app\dashboard\dashboard.html" />
         <file src="HotTowel-NG\app\dashboard\dashboard.js" target="content\app\dashboard\dashboard.js" />
-        <file src="HotTowel-NG\app\layout\shell.html" target="content\app\layout\shell.html" />
-        <file src="HotTowel-NG\app\layout\shell.js" target="content\app\layout\shell.js" />
-        <file src="HotTowel-NG\app\layout\sidebar.html" target="content\app\layout\sidebar.html" />
-        <file src="HotTowel-NG\app\layout\sidebar.js" target="content\app\layout\sidebar.js" />
-        <file src="HotTowel-NG\app\layout\topnav.html" target="content\app\layout\topnav.html" />
-        <file src="HotTowel-NG\app\layout\widgetheader.html" target="content\app\layout\widgetheader.html" />
-        <file src="HotTowel-NG\app\services\datacontext.js" target="content\app\services\datacontext.js" />
-        <file src="HotTowel-NG\app\services\directives.js" target="content\app\services\directives.js" />
-        <file src="HotTowel-NG\app\services\entityManagerFactory.js" target="content\app\services\entityManagerFactory.js" />
-        <file src="HotTowel-NG\app\settings\settings.html" target="content\app\settings\settings.html" />
-        <file src="HotTowel-NG\app\settings\settings.js" target="content\app\settings\settings.js" />
+        <file src="content\app\layout\shell.html" target="content\app\layout\shell.html" />
+        <file src="content\app\layout\shell.js" target="content\app\layout\shell.js" />
+        <file src="content\app\layout\sidebar.html" target="content\app\layout\sidebar.html" />
+        <file src="content\app\layout\sidebar.js" target="content\app\layout\sidebar.js" />
+        <file src="content\app\layout\topnav.html" target="content\app\layout\topnav.html" />
+        <file src="content\app\layout\widgetheader.html" target="content\app\layout\widgetheader.html" />
+        <file src="content\app\services\datacontext.js" target="content\app\services\datacontext.js" />
+        <file src="content\app\services\directives.js" target="content\app\services\directives.js" />
+        <file src="content\app\services\entityManagerFactory.js" target="content\app\services\entityManagerFactory.js" />
+        <file src="content\app\settings\settings.html" target="content\app\settings\settings.html" />
+        <file src="content\app\settings\settings.js" target="content\app\settings\settings.js" />
         <file src="HotTowel-NG\app\app.js" target="content\app\app.js" />
-        <file src="HotTowel-NG\app\config.exceptionHandler.js" target="content\app\config.exceptionHandler.js" />
-        <file src="HotTowel-NG\app\config.js" target="content\app\config.js" />
+        <file src="content\app\config.exceptionHandler.js" target="content\app\config.exceptionHandler.js" />
+        <file src="content\app\config.js" target="content\app\config.js" />
         <file src="HotTowel-NG\app\config.route.js" target="content\app\config.route.js" />
         <file src="content\App_Start\_._" target="content\App_Start\_._" />
-        <file src="HotTowel-NG\content\images\AngularJS-small.png" target="content\content\images\AngularJS-small.png" />
-        <file src="HotTowel-NG\content\images\breezelogo.png" target="content\content\images\breezelogo.png" />
-        <file src="HotTowel-NG\content\images\icon.png" target="content\content\images\icon.png" />
-        <file src="HotTowel-NG\content\breeze.directives.css" target="content\content\breeze.directives.css" />
-        <file src="HotTowel-NG\content\customtheme.css" target="content\content\customtheme.css" />
-        <file src="HotTowel-NG\content\ie10mobile.css" target="content\content\ie10mobile.css" />
-        <file src="HotTowel-NG\content\styles.css" target="content\content\styles.css" />
-        <file src="HotTowel-NG\scripts\breeze.directives.validation.js" target="content\scripts\breeze.directives.validation.js" />
-        <file src="HotTowel-NG\scripts\breeze.saveErrorExtensions.js" target="content\scripts\breeze.saveErrorExtensions.js" />
-        <file src="HotTowel-NG\scripts\breeze.to$q.js" target="content\scripts\breeze.to$q.js" />
-        <file src="HotTowel-NG\favicon.ico" target="content\favicon.ico" />
+        <file src="content\content\images\AngularJS-small.png" target="content\content\images\AngularJS-small.png" />
+        <file src="content\content\images\breezelogo.png" target="content\content\images\breezelogo.png" />
+        <file src="content\content\images\icon.png" target="content\content\images\icon.png" />
+        <file src="content\content\breeze.directives.css" target="content\content\breeze.directives.css" />
+        <file src="content\content\customtheme.css" target="content\content\customtheme.css" />
+        <file src="content\content\ie10mobile.css" target="content\content\ie10mobile.css" />
+        <file src="content\content\styles.css" target="content\content\styles.css" />
+        <file src="content\scripts\breeze.directives.validation.js" target="content\scripts\breeze.directives.validation.js" />
+        <file src="content\scripts\breeze.saveErrorExtensions.js" target="content\scripts\breeze.saveErrorExtensions.js" />
+        <file src="content\scripts\breeze.to$q.js" target="content\scripts\breeze.to$q.js" />
+        <file src="content\favicon.ico" target="content\favicon.ico" />
         <file src="HotTowel-NG\index.html" target="content\index.html" />
     </files>
 </package>

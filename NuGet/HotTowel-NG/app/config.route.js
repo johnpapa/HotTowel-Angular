@@ -28,7 +28,7 @@
                         nav: 1,
                         content: '<i class="icon-dashboard"></i> Dashboard'
                     }
-                },
+                }
             }, {
                 url: '/settings',
                 config: {
@@ -39,7 +39,7 @@
                         nav: 2,
                         content: '<i class="icon-calendar"></i> Settings'
                     }
-                },
+                }
             }
         ];
     }
