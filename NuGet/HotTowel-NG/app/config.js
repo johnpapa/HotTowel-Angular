@@ -7,7 +7,7 @@
     toastr.options.timeOut = 4000;
     toastr.options.positionClass = 'toast-bottom-right';
 
-    // For use with the HotTowel-NG-Z add-on that uses Breeze
+    // For use with the HotTowel-Angular-Breeze add-on that uses Breeze
     var remoteServiceName = 'breeze/Breeze';
 
     var events = {
@@ -17,7 +17,7 @@
 
     var config = {
         appErrorPrefix: '[HT Error] ', //Configure the exceptionHandler decorator
-        docTitle: 'HotTowel NG: ',
+        docTitle: 'HotTowel: ',
         events: events,
         remoteServiceName: remoteServiceName,
         version: '2.0.0'

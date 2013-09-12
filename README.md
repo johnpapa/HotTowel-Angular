@@ -23,7 +23,7 @@ The App folder contains a collection of modules. These modules encapsulate funct
 ## Installing via the NuGet Package ##
 Hot Towel is a NuGet package that augments an existing empty ASP.NET project. Just install using NuGet and then run!
 
-    Install-Package HotTowel-NG
+    Install-Package HotTowel-Angular
 
 ## How Do I Build On Hot Towel? ##
 Simply start adding code! 

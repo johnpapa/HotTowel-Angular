@@ -12,7 +12,7 @@
             title: 'Hot Towel NG',
             description: 'Hot Towel NG is a SPA template for Angular developers.'
         };
-        vm.peopleCount = 0;
+        vm.attendeeCount = 0;
         vm.people = [];
         vm.title = 'Dashboard';
 

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
-        <id>HotTowel-NG</id>
-        <version>2.0.0-beta2</version>
+        <id>HotTowel-Angular</id>
+        <version>2.0.0-beta1</version>
         <title>HotTowel-Angular</title>
         <authors>John Papa</authors>
         <owners>John Papa</owners>
@@ -10,7 +10,7 @@
         <projectUrl>https://github.com/johnpapa/HotTowel-NG</projectUrl>
         <iconUrl>http://www.johnpapa.net/wp-content/images/towelicon.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Want to build a SPA but can't decide where to start? Use Hot Towel NG and in seconds you'll have a SPA and all the tools you need to build on it! 
+        <description>Want to build a SPA but can't decide where to start? Use Hot Towel and in seconds you'll have a SPA and all the tools you need to build on it! 
 
 Hot Towel NG creates a great starting point for building a SPA using Angular for data bindings, navigation and UI, and Breeze for data management.
 
