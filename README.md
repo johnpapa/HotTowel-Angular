@@ -1,6 +1,6 @@
 # Hot Towel NG Angular SPA Template #
-
 ----------
+
 > Hot Towel: Because you don't want to go to the SPA without one!
 
 Want to build a SPA but can't decide where to start? Use Hot Towel NG and in seconds you'll have a SPA and all the tools you need to build on it! 
@@ -10,15 +10,6 @@ Want to build a SPA but can't decide where to start? Use Hot Towel NG and in sec
 Hot Towel NG creates a great starting point for building a Single Page Application (SPA) with ASP.NET. Out of the box you it provides a modular structure for your code, view navigation, data binding, rich data management and simple but elegant styling. Hot Towel NG provides everything you need to build a SPA, so you can focus on your app, not the plumbing.
 
 > Learn more about building a SPA from [John Papa's videos, tutorials and Pluralsight courses](http://johnpapa.net/spa).
-
-## Application Structure ##
-Hot Towel NG SPA provides an App folder which contains the JavaScript and HTML files that define your application. 
-
-Inside the App folder:
-
-![](http://johnpapa.net/wp-content/images/HotTowelAppFolder.png)
-
-The App folder contains a collection of modules. These modules encapsulate functionality and declare dependencies on other modules. The views folder contains the HTML for your application and the viewmodels folder contains the presentation logic for the views (a common MVVM pattern). The services folder is ideal for housing any common services that your application may need such as HTTP data retrieval or local storage interaction. It is common for multiple viewmodels to re-use code from the service modules.
 
 ## Installing via the NuGet Package ##
 Hot Towel is a NuGet package that augments an existing empty ASP.NET project. Just install using NuGet and then run!
