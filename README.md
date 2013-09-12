@@ -1,5 +1,4 @@
 # Hot Towel NG Angular SPA Template #
-----------
 
 > Hot Towel: Because you don't want to go to the SPA without one!
 
