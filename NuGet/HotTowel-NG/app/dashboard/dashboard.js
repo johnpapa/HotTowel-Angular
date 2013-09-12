@@ -13,19 +13,26 @@
             description: 'Hot Towel NG is a SPA template for Angular developers.'
         };
         vm.peopleCount = 0;
+        vm.people = [];
         vm.title = 'Dashboard';
 
         activate();
 
         function activate() {
-            var promises = [getPeopleCount()];
+            var promises = [getAttendeeCount(), getPeople()];
             common.activateController(promises, controllerId)
                 .then(function () { log('Activated Dashboard View'); });
         }
-        
-        function getPeopleCount() {
-            return datacontext.getPeopleCount().then(function (data) {
-                return vm.peopleCount = data;
+
+        function getAttendeeCount() {
+            return datacontext.getAttendeeCount().then(function (data) {
+                return vm.attendeeCount = data;
+            });
+        }
+
+        function getPeople() {
+            return datacontext.getPeople().then(function (data) {
+                return vm.people = data;
             });
         }
     }

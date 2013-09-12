@@ -7,7 +7,7 @@
                         <li class="blightblue">
                             <div class="pull-left"><i class="icon-plane"></i></div>
                             <div class="datas-text pull-right">
-                                <span class="bold">May 18 - 19, 2013</span> Castle
+                                <span class="bold">May 18 - 19, 2015</span> Castle
                                 Resort, Neverland
                             </div>
                             <div class="clearfix"></div>
@@ -15,7 +15,8 @@
 
                         <li class="borange">
                             <div class="pull-left"><i class="icon-group"></i></div>
-                            <div class="datas-text pull-right"><span class="bold">{{vm.peopleCount}}</span> People
+                            <div class="datas-text pull-right">
+                                <span class="bold">{{vm.attendeeCount}}</span> Attendees
                             </div>
                             <div class="clearfix"></div></a>
                         </li>
@@ -24,7 +25,36 @@
                 </div>
             </div>
             <div class="row-fluid">
-                <div class="span12">
+                <div class="span6">
+                    <div class="widget wviolet">
+                        <div data-cc-widget-header title="People"
+                             allow-collapse="true"></div>
+                        <div class="widget-content text-center text-info">
+                            <table class="table table-condensed table-striped">
+                                <thead>
+                                    <tr>
+                                        <td>First Name</td>
+                                        <td>Last Name</td>
+                                        <td>Age</td>
+                                        <td>Location</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr data-ng-repeat="p in vm.people">
+                                        <td>{{p.firstName}}</td>
+                                        <td>{{p.lastName}}</td>
+                                        <td>{{p.age}}</td>
+                                        <td>{{p.location}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="widget-foot">
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span6">
                     <div class="widget wgreen">
                         <div data-cc-widget-header title="{{vm.news.title}}"
                              allow-collapse="true"></div>
