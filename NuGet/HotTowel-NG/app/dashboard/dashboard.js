@@ -9,24 +9,24 @@
 
         var vm = this;
         vm.news = {
-            title: 'Hot Towel NG',
-            description: 'Hot Towel NG is a SPA template for Angular developers.'
+            title: 'Hot Towel Angular',
+            description: 'Hot Towel Angular is a SPA template for Angular developers.'
         };
-        vm.attendeeCount = 0;
+        vm.messageCount = 0;
         vm.people = [];
         vm.title = 'Dashboard';
 
         activate();
 
         function activate() {
-            var promises = [getAttendeeCount(), getPeople()];
+            var promises = [getMessageCount(), getPeople()];
             common.activateController(promises, controllerId)
                 .then(function () { log('Activated Dashboard View'); });
         }
 
-        function getAttendeeCount() {
-            return datacontext.getAttendeeCount().then(function (data) {
-                return vm.attendeeCount = data;
+        function getMessageCount() {
+            return datacontext.getMessageCount().then(function (data) {
+                return vm.messageCount = data;
             });
         }
 

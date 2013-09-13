@@ -14,13 +14,13 @@
 
         var service = {
             getPeople: getPeople,
-            getAttendeeCount: getAttendeeCount
+            getMessageCount: getMessageCount
         };
 
         return service;
 
-        function getAttendeeCount() {
-            return $q.when(211);
+        function getMessageCount() {
+            return $q.when(72);
         }
 
         function getPeople() {
