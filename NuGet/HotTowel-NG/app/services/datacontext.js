@@ -6,10 +6,6 @@
         ['common', datacontext]);
 
     function datacontext(common) {
-        var getLogFn = common.logger.getLogFn;
-        var log = getLogFn(serviceId);
-        var logError = getLogFn(serviceId, 'error');
-        var logSuccess = getLogFn(serviceId, 'success');
         var $q = common.$q;
 
         var service = {
@@ -19,9 +15,7 @@
 
         return service;
 
-        function getMessageCount() {
-            return $q.when(72);
-        }
+        function getMessageCount() { return $q.when(72); }
 
         function getPeople() {
             var people = [
