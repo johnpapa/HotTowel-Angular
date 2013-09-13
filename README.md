@@ -18,14 +18,17 @@ Hot Towel is a NuGet package that augments an existing empty ASP.NET project. Ju
 ## How Do I Build On Hot Towel? ##
 Simply start adding code! 
 
-1. Add your own server-side code, preferably Entity Framework and Web API (which really shines with Breeze.js)
+1. Add your own server-side code, such as Entity Framework and Web API (which really shines with Breeze.js)
 2. Add views and controllers
 3. Update the navigation routes in `config.routes.js`
+
+## Add Rich Data with Breeze ##
+Add rich data features using Breeze to Hot Towel Angular, via NuGet.
+
+    Install-Package HotTowel-Angular-Breeze
 
 ## Resources ##
 
 + [SPA Resources](http://johnpapa.net/spa)
-+ [Hot Towel on GitHub](https://github.com/johnpapa/HotTowel)
-
-### Hot Towel SPA on NuGet ###
-<img src="http://www.johnpapa.net/wp-content/images/towelicon.png" width="48" height="48" class="alignleft" />Hot Towel also comes as a <a href="http://nuget.org/packages/HotTowel/" target="_blank">NuGet package</a> that you can add to an ASP.NET application. If you start from scratch, the template is the way to go. If you have an existing project, you can use the NuGet package (which lacks the start-up hooks that the template has).
++ [Hot Towel Angular on GitHub](https://github.com/johnpapa/HotTowel-NG)
++ [Hot Towel Angular on NuGet] (http://nuget.org/packages/HotTowel-Angular)
