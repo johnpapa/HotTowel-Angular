@@ -3,9 +3,19 @@
 
     var bootstrapModule = angular.module('common.bootstrap', ['ui.bootstrap']);
 
-    bootstrapModule.factory('bootstrap.dialog', ['$modal', modalDialog]);
+    bootstrapModule.provider('bsDialogConfig', function () {
+        this.config = {
+            // These are the properties we need to set
+            //templatePath: '/app/common/bootstrap'
+        };
 
-    function modalDialog($modal) {
+        this.$get = function () { return { config: this.config }; };
+    });
+
+    bootstrapModule.factory('bootstrap.dialog', ['$modal', 'bsDialogConfig', modalDialog]);
+
+    function modalDialog($modal, bsDialogConfig) {
+        var config = bsDialogConfig.config;
         var service = {
             deleteDialog: deleteDialog,
             confirmationDialog: confirmationDialog
@@ -13,22 +23,42 @@
 
         return service;
 
-        function deleteDialog(confirmDelete, cancel, itemName) {
+        function deleteDialog(itemName) {
+            var title = 'Confirm Delete';
             itemName = itemName || 'item';
             var msg = 'Delete ' + itemName + '?';
-            var title = 'Confirm Delete';
 
-            return confirmationDialog(confirmDelete, cancel, title, msg);
+            return confirmationDialog(title, msg);
         }
 
-        function confirmationDialog(confirm, cancel, title, msg) {
-            var btns = [{ result: 'no', label: 'No', cssClass: 'btn-primary' },
-                { result: 'yes', label: 'Yes' }];
+        function confirmationDialog(title, msg, okText, cancelText) {
+            var modalOptions = {
+                templateUrl: config.templatePath + '/modalDialog.html',
+                controller: ModalInstance,
+                keyboard: true,
+                resolve: {
+                    options: function () {
+                        return {
+                            title: title,
+                            message: msg,
+                            okText: okText,
+                            cancelText: cancelText
+                        };
+                    }
+                }
+            };
 
-            return $modal.messageBox(title, msg, btns)
-                .open().then(function (result) {
-                    result && result.toLowerCase() === 'yes' ? confirm() : cancel();
-                });
+            return $modal.open(modalOptions).result; 
         }
     }
+
+    var ModalInstance = ['$scope', '$modalInstance', 'options',
+        function ($scope, $modalInstance, options) {
+            $scope.title = options.title || 'Title';
+            $scope.message = options.message || '';
+            $scope.okText = options.okText || 'OK';
+            $scope.cancelText = options.cancelText || 'Cancel';
+            $scope.ok = function () { $modalInstance.close('ok'); };
+            $scope.cancel = function () { $modalInstance.dismiss('cancel'); };
+        }];
 })();

@@ -38,4 +38,12 @@
         cfg.config.spinnerToggleEvent = config.events.spinnerToggle;
     }]);
     //#endregion
+
+    //#region Configure the bootstrap common services via bsConfig
+    app.config(['bsDialogConfigProvider', function (cfg) {
+        cfg.config = {
+            templatePath: '/app/common/bootstrap'
+        };
+    }]);
+    //#endregion
 })();
