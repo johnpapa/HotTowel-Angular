@@ -58,12 +58,14 @@
         }
 
         function createSearchThrottle(viewmodel, list, filteredList, filter, delay) {
+            // After a delay, search a viewmodel's list using 
+            // a filter function, and return a filteredList.
+
             // custom delay or use default
             delay = +delay || 300;
             // if only vm and list parameters were passed, set others by naming convention 
             if (!filteredList) {
-                // assuming list is named sessions,
-                // filteredList is filteredSessions
+                // assuming list is named sessions, filteredList is filteredSessions
                 filteredList = 'filtered' + list[0].toUpperCase() + list.substr(1).toLowerCase(); // string
                 // filter function is named sessionFilter
                 filter = list + 'Filter'; // function in string form
@@ -100,6 +102,10 @@
         }
 
         function debouncedThrottle(key, callback, delay, immediate) {
+            // Perform some action (callback) after a delay. 
+            // Track the callback by key, so if the same callback 
+            // is issued again, restart the delay.
+
             var defaultDelay = 1000;
             delay = delay || defaultDelay;
             if (throttles[key]) {
