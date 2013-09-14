@@ -23,10 +23,8 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <releaseNotes />
         <copyright>Copyright © 2013 John Papa</copyright>
         <language>en-US</language>
-        <tags>spa jquery angular toastr javascript moment fontawsome</tags>
+        <tags>spa jquery angular toastr javascript moment fontawesome hottowel</tags>
         <dependencies>
-            <dependency id="angularjs" version="1.2.0-RC1" />
-            <dependency id="Angular.UI.Bootstrap" version="0.6.0" />
             <dependency id="FontAwesome" version="3.2.1" />
             <dependency id="jQuery" version="2.0.3" />
             <dependency id="Moment.js" version="2.1.0" />
@@ -36,7 +34,7 @@ Hot Towel: Because you don't want to go to the SPA without one!
         </dependencies>
     </metadata>
     <files>
-        <file src="NuGet\HotTowel-NG\app\admin\admin.html" target="content\app\admin\admin.html" />
+        <file src="content\app\admin\admin.html" target="content\app\admin\admin.html" />
         <file src="content\app\admin\admin.js" target="content\app\admin\admin.js" />
         <file src="content\app\common\bootstrap\bootstrap.dialog.js" target="content\app\common\bootstrap\bootstrap.dialog.js" />
         <file src="content\app\common\common.js" target="content\app\common\common.js" />
@@ -45,14 +43,14 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <file src="content\app\dashboard\dashboard.html" target="content\app\dashboard\dashboard.html" />
         <file src="content\app\dashboard\dashboard.js" target="content\app\dashboard\dashboard.js" />
         <file src="content\app\layout\shell.html" target="content\app\layout\shell.html" />
-        <file src="NuGet\HotTowel-NG\app\layout\shell.js" target="content\app\layout\shell.js" />
+        <file src="content\app\layout\shell.js" target="content\app\layout\shell.js" />
         <file src="content\app\layout\sidebar.html" target="content\app\layout\sidebar.html" />
         <file src="content\app\layout\sidebar.js" target="content\app\layout\sidebar.js" />
-        <file src="NuGet\HotTowel-NG\app\layout\topnav.html" target="content\app\layout\topnav.html" />
+        <file src="content\app\layout\topnav.html" target="content\app\layout\topnav.html" />
         <file src="content\app\layout\widgetheader.html" target="content\app\layout\widgetheader.html" />
-        <file src="NuGet\HotTowel-NG\app\services\datacontext.js" target="content\app\services\datacontext.js" />
+        <file src="content\app\services\datacontext.js" target="content\app\services\datacontext.js" />
         <file src="content\app\services\directives.js" target="content\app\services\directives.js" />
-        <file src="NuGet\HotTowel-NG\app\app.js" target="content\app\app.js" />
+        <file src="content\app\app.js" target="content\app\app.js" />
         <file src="content\app\config.exceptionHandler.js" target="content\app\config.exceptionHandler.js" />
         <file src="content\app\config.js" target="content\app\config.js" />
         <file src="content\app\config.route.js" target="content\app\config.route.js" />
@@ -62,6 +60,23 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <file src="content\content\customtheme.css" target="content\content\customtheme.css" />
         <file src="content\content\ie10mobile.css" target="content\content\ie10mobile.css" />
         <file src="content\content\styles.css" target="content\content\styles.css" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-animate.js" target="content\scripts\angular-animate.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-animate.min.js" target="content\scripts\angular-animate.min.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-animate.min.js.map" target="content\scripts\angular-animate.min.js.map" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-mocks.js" target="content\scripts\angular-mocks.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-route.js" target="content\scripts\angular-route.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-route.min.js" target="content\scripts\angular-route.min.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-route.min.js.map" target="content\scripts\angular-route.min.js.map" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-sanitize.js" target="content\scripts\angular-sanitize.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-sanitize.min.js" target="content\scripts\angular-sanitize.min.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular-sanitize.min.js.map" target="content\scripts\angular-sanitize.min.js.map" />
+        <file src="NuGet\HotTowel-NG\scripts\angular.js" target="content\scripts\angular.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular.min.js" target="content\scripts\angular.min.js" />
+        <file src="NuGet\HotTowel-NG\scripts\angular.min.js.map" target="content\scripts\angular.min.js.map" />
+        <file src="NuGet\HotTowel-NG\scripts\ui-bootstrap-0.6.0.js" target="content\scripts\ui-bootstrap-0.6.0.js" />
+        <file src="NuGet\HotTowel-NG\scripts\ui-bootstrap-0.6.0.min.js" target="content\scripts\ui-bootstrap-0.6.0.min.js" />
+        <file src="NuGet\HotTowel-NG\scripts\ui-bootstrap-tpls-0.6.0.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.js" />
+        <file src="NuGet\HotTowel-NG\scripts\ui-bootstrap-tpls-0.6.0.min.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.min.js" />
         <file src="content\favicon.ico" target="content\favicon.ico" />
         <file src="content\index.html" target="content\index.html" />
     </files>
