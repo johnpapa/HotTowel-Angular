@@ -2,16 +2,16 @@
 
 > Hot Towel: Because you don't want to go to the SPA without one!
 
-Want to build a SPA but can't decide where to start? Use Hot Towel and in seconds you'll have a SPA and all the tools you need to build on it! 
+Want to build a SPA but can't decide where to start? Use Hot Towel Angular and in seconds you'll have a SPA and all the tools you need to build on it! 
 
 ![](http://www.johnpapa.net/wp-content/uploads/2013/09/HotTowel-NG-Preview.png)
 
-Hot Towel creates a great starting point for building a Single Page Application (SPA) with ASP.NET. Out of the box you it provides a modular structure for your code, view navigation, data binding, rich data management and simple but elegant styling. Hot Towel provides everything you need to build a SPA, so you can focus on your app, not the plumbing.
+Hot Towel Angular creates a great starting point for building a Single Page Application (SPA). Out of the box it provides a modular structure for your code, view navigation, data binding, separation of services, and simple but elegant styling. Hot Towel provides everything you need to build a SPA, so you can focus on your app, not the plumbing.
 
 > Learn more about building a SPA from [John Papa's videos, tutorials and Pluralsight courses](http://johnpapa.net/spa).
 
 ## Installing via the NuGet Package ##
-Hot Towel is a NuGet package that augments an existing empty ASP.NET project. Just install using NuGet and then run!
+Hot Towel Angular is a NuGet package that augments an existing empty ASP.NET project. Just install using NuGet and then run!
 
     Install-Package HotTowel-Angular
 
