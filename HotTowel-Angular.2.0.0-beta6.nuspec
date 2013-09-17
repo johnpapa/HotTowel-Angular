@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>HotTowel-Angular</id>
-        <version>2.0.0-beta4</version>
+        <version>2.0.0-beta6</version>
         <title>HotTowel-Angular</title>
         <authors>John Papa</authors>
         <owners>John Papa</owners>
@@ -34,14 +34,14 @@ Hot Towel: Because you don't want to go to the SPA without one!
         </dependencies>
     </metadata>
     <files>
-        <file src="content\app\admin\admin.html" target="content\app\admin\admin.html" />
+        <file src="NuGet\HotTowel-NG\app\admin\admin.html" target="content\app\admin\admin.html" />
         <file src="content\app\admin\admin.js" target="content\app\admin\admin.js" />
-        <file src="NuGet\HotTowel-NG\app\common\bootstrap\bootstrap.dialog.js" target="content\app\common\bootstrap\bootstrap.dialog.js" />
-        <file src="NuGet\HotTowel-NG\app\common\bootstrap\modalDialog.html" target="content\app\common\bootstrap\modalDialog.html" />
+        <file src="content\app\common\bootstrap\bootstrap.dialog.js" target="content\app\common\bootstrap\bootstrap.dialog.js" />
+        <file src="content\app\common\bootstrap\modalDialog.html" target="content\app\common\bootstrap\modalDialog.html" />
         <file src="content\app\common\common.js" target="content\app\common\common.js" />
         <file src="content\app\common\logger.js" target="content\app\common\logger.js" />
         <file src="content\app\common\spinner.js" target="content\app\common\spinner.js" />
-        <file src="content\app\dashboard\dashboard.html" target="content\app\dashboard\dashboard.html" />
+        <file src="NuGet\HotTowel-NG\app\dashboard\dashboard.html" target="content\app\dashboard\dashboard.html" />
         <file src="content\app\dashboard\dashboard.js" target="content\app\dashboard\dashboard.js" />
         <file src="content\app\layout\shell.html" target="content\app\layout\shell.html" />
         <file src="content\app\layout\shell.js" target="content\app\layout\shell.js" />
@@ -53,7 +53,7 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <file src="content\app\services\directives.js" target="content\app\services\directives.js" />
         <file src="content\app\app.js" target="content\app\app.js" />
         <file src="content\app\config.exceptionHandler.js" target="content\app\config.exceptionHandler.js" />
-        <file src="NuGet\HotTowel-NG\app\config.js" target="content\app\config.js" />
+        <file src="content\app\config.js" target="content\app\config.js" />
         <file src="content\app\config.route.js" target="content\app\config.route.js" />
         <file src="content\content\images\AngularJS-small.png" target="content\content\images\AngularJS-small.png" />
         <file src="content\content\images\breezelogo.png" target="content\content\images\breezelogo.png" />
@@ -61,24 +61,24 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <file src="content\content\customtheme.css" target="content\content\customtheme.css" />
         <file src="content\content\ie10mobile.css" target="content\content\ie10mobile.css" />
         <file src="content\content\styles.css" target="content\content\styles.css" />
-        <file src="content\scripts\angular-animate.js" target="content\scripts\angular-animate.js" />
-        <file src="content\scripts\angular-animate.min.js" target="content\scripts\angular-animate.min.js" />
-        <file src="content\scripts\angular-animate.min.js.map" target="content\scripts\angular-animate.min.js.map" />
-        <file src="content\scripts\angular-mocks.js" target="content\scripts\angular-mocks.js" />
-        <file src="content\scripts\angular-route.js" target="content\scripts\angular-route.js" />
-        <file src="content\scripts\angular-route.min.js" target="content\scripts\angular-route.min.js" />
-        <file src="content\scripts\angular-route.min.js.map" target="content\scripts\angular-route.min.js.map" />
-        <file src="content\scripts\angular-sanitize.js" target="content\scripts\angular-sanitize.js" />
-        <file src="content\scripts\angular-sanitize.min.js" target="content\scripts\angular-sanitize.min.js" />
-        <file src="content\scripts\angular-sanitize.min.js.map" target="content\scripts\angular-sanitize.min.js.map" />
-        <file src="content\scripts\angular.js" target="content\scripts\angular.js" />
-        <file src="content\scripts\angular.min.js" target="content\scripts\angular.min.js" />
-        <file src="content\scripts\angular.min.js.map" target="content\scripts\angular.min.js.map" />
-        <file src="content\scripts\ui-bootstrap-0.6.0.js" target="content\scripts\ui-bootstrap-0.6.0.js" />
-        <file src="content\scripts\ui-bootstrap-0.6.0.min.js" target="content\scripts\ui-bootstrap-0.6.0.min.js" />
-        <file src="content\scripts\ui-bootstrap-tpls-0.6.0.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.js" />
-        <file src="content\scripts\ui-bootstrap-tpls-0.6.0.min.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.min.js" />
         <file src="content\favicon.ico" target="content\favicon.ico" />
         <file src="content\index.html" target="content\index.html" />
+        <file src="scripts\angular-animate.js" target="scripts\angular-animate.js" />
+        <file src="scripts\angular-animate.min.js" target="scripts\angular-animate.min.js" />
+        <file src="scripts\angular-animate.min.js.map" target="scripts\angular-animate.min.js.map" />
+        <file src="scripts\angular-mocks.js" target="scripts\angular-mocks.js" />
+        <file src="scripts\angular-route.js" target="scripts\angular-route.js" />
+        <file src="scripts\angular-route.min.js" target="scripts\angular-route.min.js" />
+        <file src="scripts\angular-route.min.js.map" target="scripts\angular-route.min.js.map" />
+        <file src="scripts\angular-sanitize.js" target="scripts\angular-sanitize.js" />
+        <file src="scripts\angular-sanitize.min.js" target="scripts\angular-sanitize.min.js" />
+        <file src="scripts\angular-sanitize.min.js.map" target="scripts\angular-sanitize.min.js.map" />
+        <file src="scripts\angular.js" target="scripts\angular.js" />
+        <file src="scripts\angular.min.js" target="scripts\angular.min.js" />
+        <file src="scripts\angular.min.js.map" target="scripts\angular.min.js.map" />
+        <file src="scripts\ui-bootstrap-0.6.0.js" target="scripts\ui-bootstrap-0.6.0.js" />
+        <file src="scripts\ui-bootstrap-0.6.0.min.js" target="scripts\ui-bootstrap-0.6.0.min.js" />
+        <file src="scripts\ui-bootstrap-tpls-0.6.0.js" target="scripts\ui-bootstrap-tpls-0.6.0.js" />
+        <file src="scripts\ui-bootstrap-tpls-0.6.0.min.js" target="scripts\ui-bootstrap-tpls-0.6.0.min.js" />
     </files>
 </package>
