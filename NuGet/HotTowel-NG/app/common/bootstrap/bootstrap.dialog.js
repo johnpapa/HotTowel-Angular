@@ -3,23 +3,28 @@
 
     var bootstrapModule = angular.module('common.bootstrap', ['ui.bootstrap']);
 
-    bootstrapModule.provider('bsDialogConfig', function () {
-        this.config = {
-            // These are the properties we need to set
-            //templatePath: '/app/common/bootstrap'
-        };
+    bootstrapModule.factory('bootstrap.dialog', ['$modal', '$templateCache', modalDialog]);
 
-        this.$get = function () { return { config: this.config }; };
-    });
-
-    bootstrapModule.factory('bootstrap.dialog', ['$modal', 'bsDialogConfig', modalDialog]);
-
-    function modalDialog($modal, bsDialogConfig) {
-        var config = bsDialogConfig.config;
+    function modalDialog($modal, $templateCache) {
         var service = {
             deleteDialog: deleteDialog,
             confirmationDialog: confirmationDialog
         };
+
+        $templateCache.put('modalDialog.tpl.html', 
+            '<div>' +
+            '    <div class="modal-header">' +
+            '        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" data-ng-click="cancel()">&times;</button>' +
+            '        <h3>{{title}}</h3>' +
+            '    </div>' +
+            '    <div class="modal-body">' +
+            '        <p>{{message}}</p>' +
+            '    </div>' +
+            '    <div class="modal-footer">' +
+            '        <button class="btn btn-primary" data-ng-click="ok()">{{okText}}</button>' +
+            '        <button class="btn btn-info" data-ng-click="cancel()">{{cancelText}}</button>' +
+            '    </div>' +
+            '</div>');
 
         return service;
 
@@ -32,8 +37,9 @@
         }
 
         function confirmationDialog(title, msg, okText, cancelText) {
+
             var modalOptions = {
-                templateUrl: config.templatePath + '/modalDialog.html',
+                templateUrl: 'modalDialog.tpl.html',
                 controller: ModalInstance,
                 keyboard: true,
                 resolve: {
