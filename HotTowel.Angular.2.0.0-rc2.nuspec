@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
-        <id>HotTowel-Angular</id>
-        <version>2.0.0-beta8</version>
-        <title>HotTowel-Angular</title>
+        <id>HotTowel.Angular</id>
+        <version>2.0.0-rc2</version>
+        <title>HotTowel.Angular</title>
         <authors>John Papa</authors>
         <owners>John Papa</owners>
         <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
