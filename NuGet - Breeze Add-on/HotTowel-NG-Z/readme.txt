@@ -1,4 +1,9 @@
-﻿
+﻿/* HotTowel.Angular.Breeze
+**
+** Installs Breeze, WebApi v2, EF 6.
+** Installs HotTowel.Angular client code.
+**
+*/
 
 Add these to the Index.html page
 
