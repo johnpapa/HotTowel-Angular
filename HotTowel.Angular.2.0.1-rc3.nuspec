@@ -69,5 +69,6 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <file src="content\scripts\ui-bootstrap-tpls-0.6.0.min.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.min.js" />
         <file src="content\favicon.ico" target="content\favicon.ico" />
         <file src="content\index.html" target="content\index.html" />
+        <file src="NuGet\HotTowel-NG\install.ps1" target="tools\install.ps1" />
     </files>
 </package>
