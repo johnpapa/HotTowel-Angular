@@ -5,7 +5,7 @@ param($installPath, $toolsPath, $package, $project)
 
 try
 {
-  $url = "http://www.johnpapa.net/wp-content/sites/htngz/readme/readme.html"
+  $url = "http://www.johnpapa.net/wp-content/sites/htng/readme/readme.html"
   $dte2 = Get-Interface $dte ([EnvDTE80.DTE2])
 
   if ($dte2.ActiveWindow.Caption -eq "Package Manager Console")
