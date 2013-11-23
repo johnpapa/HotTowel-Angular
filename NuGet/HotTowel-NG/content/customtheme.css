@@ -10,10 +10,17 @@
     /*font-weight: 400;*/
 }
 
-input, .btn, .badge, .modal {
-    -ms-border-radius: 0 !important;
-    border-radius: 0 !important;
+.btn, .badge, .modal {
+    -ms-border-radius: *!important;
+    border-radius: !important;
 }
+
+input, select {
+    -ms-border-radius: 4px !important;
+    border-radius: 4px !important;
+    padding: 4px !important;
+}
+
 
 .navbar * {
     background-image: none !important;
