@@ -3,9 +3,28 @@
 
     var app = angular.module('app');
 
-    app.directive('ccSidebar', ['$window', function ($window) {
-        // Repositions the sidebar on window resize 
-        // and opens and closes the sidebar menu.
+    app.directive('ccImgPerson', ['config', function (config) {
+        //Usage:
+        //<img data-cc-img-person="{{s.speaker.imageSource}}"/>
+        var basePath = config.imageSettings.imageBasePath;
+        var unknownImage = config.imageSettings.unknownPersonImageSource;
+        var directive = {
+            link: link,
+            restrict: 'A'
+        };
+        return directive;
+
+        function link(scope, element, attrs) {
+            attrs.$observe('ccImgPerson', function(value) {
+                value = basePath + (value || unknownImage);
+                attrs.$set('src', value);
+            });
+        }
+    }]);
+
+
+    app.directive('ccSidebar', function () {
+        // Opens and clsoes the sidebar menu.
         // Usage:
         //  <div data-cc-sidebar>
         // Creates:
@@ -14,19 +33,13 @@
             link: link,
             restrict: 'A'
         };
-        var $win = $($window);
         return directive;
 
         function link(scope, element, attrs) {
             var $sidebarInner = element.find('.sidebar-inner');
             var $dropdownElement = element.find('.sidebar-dropdown a');
             element.addClass('sidebar');
-            $win.resize(resize);
             $dropdownElement.click(dropdown);
-
-            function resize() {
-                $win.width() >= 765 ? $sidebarInner.slideDown(350) : $sidebarInner.slideUp(350);
-            }
 
             function dropdown(e) {
                 var dropClass = 'dropy';
@@ -46,7 +59,8 @@
                 }
             }
         }
-    }]);
+    });
+
 
     app.directive('ccWidgetClose', function () {
         // Usage:
