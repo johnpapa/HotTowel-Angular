@@ -31,9 +31,9 @@ Hot Towel: Because you don't want to go to the SPA without one!
             <dependency id="Spin.js" version="1.3" />
             <dependency id="toastr" version="2.0.1" />
             <dependency id="Twitter.Bootstrap" version="2.3.2" />
-            <dependency id="AngularJS.Route" version="1.2.1" />
-            <dependency id="AngularJS.Animate" version="1.2.1" />
-            <dependency id="AngularJS.Sanitize" version="1.2.1" />
+            <dependency id="AngularJS.Route" version="1.2.3" />
+            <dependency id="AngularJS.Animate" version="1.2.3" />
+            <dependency id="AngularJS.Sanitize" version="1.2.3" />
         </dependencies>
     </metadata>
     <files>
@@ -60,9 +60,9 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <file src="content\content\images\AngularJS-small.png" target="content\content\images\AngularJS-small.png" />
         <file src="content\content\images\breezelogo.png" target="content\content\images\breezelogo.png" />
         <file src="content\content\images\icon.png" target="content\content\images\icon.png" />
-        <file src="NuGet\HotTowel-NG\content\customtheme.css" target="content\content\customtheme.css" />
+        <file src="content\content\customtheme.css" target="content\content\customtheme.css" />
         <file src="content\content\ie10mobile.css" target="content\content\ie10mobile.css" />
-        <file src="NuGet\HotTowel-NG\content\styles.css" target="content\content\styles.css" />
+        <file src="content\content\styles.css" target="content\content\styles.css" />
         <file src="content\scripts\ui-bootstrap-0.6.0.js" target="content\scripts\ui-bootstrap-0.6.0.js" />
         <file src="content\scripts\ui-bootstrap-0.6.0.min.js" target="content\scripts\ui-bootstrap-0.6.0.min.js" />
         <file src="content\scripts\ui-bootstrap-tpls-0.6.0.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.js" />
