@@ -34,6 +34,7 @@ Hot Towel: Because you don't want to go to the SPA without one!
             <dependency id="AngularJS.Route" version="1.2.3" />
             <dependency id="AngularJS.Animate" version="1.2.3" />
             <dependency id="AngularJS.Sanitize" version="1.2.3" />
+            <dependency id="Angular.UI.Bootstrap" version="0.7.0" />
         </dependencies>
     </metadata>
     <files>
@@ -63,12 +64,9 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <file src="content\content\customtheme.css" target="content\content\customtheme.css" />
         <file src="content\content\ie10mobile.css" target="content\content\ie10mobile.css" />
         <file src="content\content\styles.css" target="content\content\styles.css" />
-        <file src="content\scripts\ui-bootstrap-0.6.0.js" target="content\scripts\ui-bootstrap-0.6.0.js" />
-        <file src="content\scripts\ui-bootstrap-0.6.0.min.js" target="content\scripts\ui-bootstrap-0.6.0.min.js" />
-        <file src="content\scripts\ui-bootstrap-tpls-0.6.0.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.js" />
-        <file src="content\scripts\ui-bootstrap-tpls-0.6.0.min.js" target="content\scripts\ui-bootstrap-tpls-0.6.0.min.js" />
+        <file src="content\scripts\_._" target="content\scripts\_._" />
         <file src="content\favicon.ico" target="content\favicon.ico" />
-        <file src="content\index.html" target="content\index.html" />
+        <file src="NuGet\HotTowel-NG\index.html" target="content\index.html" />
         <file src="tools\install.ps1" target="tools\install.ps1" />
     </files>
 </package>
