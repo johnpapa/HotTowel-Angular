@@ -18,7 +18,7 @@
             vm.navRoutes = routes.filter(function(r) {
                 return r.config.settings && r.config.settings.nav;
             }).sort(function(r1, r2) {
-                return r1.config.settings.nav > r2.config.settings.nav;
+                return r1.config.settings.nav - r2.config.settings.nav;
             });
         }
         
