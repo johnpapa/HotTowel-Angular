@@ -67,11 +67,11 @@
         // <a data-cc-widget-close></a>
         // Creates:
         // <a data-cc-widget-close="" href="#" class="wclose">
-        //     <i class="icon-remove"></i>
+        //     <i class="fa fa-remove"></i>
         // </a>
         var directive = {
             link: link,
-            template: '<i class="icon-remove"></i>',
+            template: '<i class="fa fa-remove"></i>',
             restrict: 'A'
         };
         return directive;
@@ -92,10 +92,10 @@
         // Usage:
         // <a data-cc-widget-minimize></a>
         // Creates:
-        // <a data-cc-widget-minimize="" href="#"><i class="icon-chevron-up"></i></a>
+        // <a data-cc-widget-minimize="" href="#"><i class="fa fa-chevron-up"></i></a>
         var directive = {
             link: link,
-            template: '<i class="icon-chevron-up"></i>',
+            template: '<i class="fa fa-chevron-up"></i>',
             restrict: 'A'
         };
         return directive;
@@ -111,11 +111,11 @@
                 var $wcontent = element.parent().parent().next('.widget-content');
                 var iElement = element.children('i');
                 if ($wcontent.is(':visible')) {
-                    iElement.removeClass('icon-chevron-up');
-                    iElement.addClass('icon-chevron-down');
+                    iElement.removeClass('fa fa-chevron-up');
+                    iElement.addClass('fa fa-chevron-down');
                 } else {
-                    iElement.removeClass('icon-chevron-down');
-                    iElement.addClass('icon-chevron-up');
+                    iElement.removeClass('fa fa-chevron-down');
+                    iElement.addClass('fa fa-chevron-up');
                 }
                 $wcontent.toggle(500);
             }
@@ -127,12 +127,12 @@
         // <span data-cc-scroll-to-top></span>
         // Creates:
         // <span data-cc-scroll-to-top="" class="totop">
-        //      <a href="#"><i class="icon-chevron-up"></i></a>
+        //      <a href="#"><i class="fa fa-chevron-up"></i></a>
         // </span>
         function ($window) {
             var directive = {
                 link: link,
-                template: '<a href="#"><i class="icon-chevron-up"></i></a>',
+                template: '<a href="#"><i class="fa fa-chevron-up"></i></a>',
                 restrict: 'A'
             };
             return directive;

@@ -26,7 +26,7 @@
                     title: 'dashboard',
                     settings: {
                         nav: 1,
-                        content: '<i class="icon-dashboard"></i> Dashboard'
+                        content: '<i class="fa fa-dashboard"></i> Dashboard'
                     }
                 }
             }, {
@@ -36,7 +36,7 @@
                     templateUrl: 'app/admin/admin.html',
                     settings: {
                         nav: 2,
-                        content: '<i class="icon-lock"></i> Admin'
+                        content: '<i class="fa fa-lock"></i> Admin'
                     }
                 }
             }

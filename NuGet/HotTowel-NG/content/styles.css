@@ -169,7 +169,7 @@ small {
     margin: 2px auto 8px auto !important;
 }
 
-.icon-search {
+.fa-search {
     color: #FFFFFF;
 }
 
@@ -270,17 +270,17 @@ small {
         font-size: 200%;
     }
 
-.icon-asterisk.icon-asterisk-large {
+.fa-asterisk.fa-asterisk-large {
     font-size: 180%;
     vertical-align: middle;
     color: #F58A00;
 }
 
-.icon-asterisk.icon-asterisk-alert {
+.fa-asterisk.fa-asterisk-alert {
     color: #F58A00;
 }
 
-.icon-asterisk-inline {
+.fa-asterisk-inline {
     padding: 0 4px 0 0;
 }
 
