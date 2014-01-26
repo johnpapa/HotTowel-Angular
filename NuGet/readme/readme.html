@@ -6,13 +6,24 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link href="content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="content/fontawesome/font-awesome.min.css" rel="stylesheet">
     <style>
+        .navbar, .navbar-nav.navbar-right {
+            height: 50px;
+        }
+        .navbar {
+            padding: 0 2em;
+        }
+        nav.navbar-collapse { 
+            background-color: #222;
+        }
         .fa-twitter {
             padding-right: 0.5em;
         }
-        .navbar .nav > li > a.nav-twitter {
-            background-color: #41ABE1;
-            color: #fff;
+        a.nav-twitter {
+            background-color: #41ABE1 !important;
+            color: #fff !important;
         }
 
             .nav-twitter .icon-twitter {
@@ -22,84 +33,87 @@
             .nav-twitter:hover, .nav-twitter:focus {
                 background-color: #198FCB;
             }
+        body { padding-top: 50px; }
 
-        .navbar-inner {
-            height: 40px;
-            border-width: 0 !important;
+        @media (max-width: 979px){
+            .container {
+                margin: 0 2em;
+            }
         }
+        @media (max-width: 767px){
+            .navbar, .navbar-nav.navbar-right {
+                height: auto;
+            }
+        }
+
     </style>
-    <link href="content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="content/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
-    <link href="content/fontawesome/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="brand" href="http://johnpapa.net"><i class="fa fa-html5 fa-lg"></i> John Papa</a>
-                    <div class="nav-collapse collapse">
-                        <div>
-                            <article>
-                                <ul class="nav">
-                                    <li>
-                                        <a href="http://johnpapa.net/spa">SPA Resources</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://jpapa.me/spangz">Learn Angular</a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </div>
-                        <ul class="nav navbar-form pull-right hidden-phone">
-                            <li><a href="https://twitter.com/john_papa" target="_blank" class="nav-twitter"><i class="fa fa-twitter"></i>Follow</a></li>
-                            <li>
-                                <a href="http://www.breezejs.com" target="_blank">
-                                    <img src="content/images/breezelogo-small.png" />
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="http://www.angularjs.org" target="_blank">
-                                    <img src="content/images/AngularJS-small.png" />
-                                </a>
-                            </li>
-                        </ul>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://johnpapa.net"><i class="fa fa-html5 fa-lg"></i> John Papa</a>
+            <a class="btn navbar-btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <nav class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="http://johnpapa.net/spa">SPA Resources</a>
+                </li>
+                <li>
+                    <a href="http://jpapa.me/spangz">Learn Angular</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-phone">
+                <li><a href="https://twitter.com/john_papa" target="_blank" class="nav-twitter"><i class="fa fa-twitter"></i>Follow</a></li>
+                <li>
+                    <a href="http://www.breezejs.com" target="_blank">
+                        <img src="content/images/breezelogo-small.png" />
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="http://www.angularjs.org" target="_blank">
+                        <img src="content/images/AngularJS-small.png" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+            <div>
+                <div class="row">
+                    <div>
+                        <h1>HotTowel Angular Breeze</h1>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 2em;">
+                    <div class="">
+                        <p>Kick-Start Your <a href="http://angularjs.org" target="_blank">Angular</a> and <a href="http://breezejs.com" target="_blank">Breeze</a> App</p>
+                        <p>Version 2.1</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        Add these to the Index.html page
+                        <pre class="prettyprint2">&lt;link href="content/breeze.directives.css" rel="stylesheet" /&gt;
+&lt;script src="scripts/q.js"&gt;&lt;/script&gt;
+&lt;script src="scripts/breeze.debug.js"&gt;&lt;/script&gt;
+&lt;script src="scripts/breeze.directives.validation.js"&gt;&lt;/script&gt;
+&lt;script src="scripts/breeze.to$q.js"&gt;&lt;/script&gt;
+&lt;script src="scripts/breeze.saveErrorExtensions.js"&gt;&lt;/script&gt;
+&lt;script src="app/services/entityManagerFactory.js"&gt;&lt;/script&gt;                        </pre>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <img src="http://www.johnpapa.net/wp-content/uploads/2013/09/HotTowel-NG-Preview-600x322.png">
                     </div>
                 </div>
             </div>
-        </div>
-        <section class="container">
-            <article>
-                <div class="hero-unit">
-                    <div class="row-fluid">
-                        <div>
-                            <h1>HotTowel Angular</h1>
-                        </div>
-                    </div>
-                    <div class="row-fluid" style="margin-top: 2em;">
-                        <div class="span12">
-                            <p>Kick-Start Your <a href="http://angularjs.org" target="_blank">Angular</a> App</p>
-                            <p>Version 2.0.2</p>
-                        </div>
-                    </div>
-                    <div class="row-fluid">
-                        <div>
-                            Just browse and you have an instant-app!
-                        </div>
-                    </div>
-                    <div class="row-fluid">
-                        <img src="http://www.johnpapa.net/wp-content/uploads/2013/09/HotTowel-NG-Preview-600x322.png"
-                             class="img-polaroid" />
-                    </div>
-                </div>
-            </article>
-        </section>
-    </div>
+    </section>
     <script src="scripts/jquery-2.0.3.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
 </body>

@@ -1,14 +1,19 @@
 ﻿/*#region Override background color theme */
+
+/*For Bootstrap 3*/
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
 body {
     background-color: #FFF;
 }
 
-.navbar-inverse .btn-navbar.active {
-    background-color: #333 \9;
+.navbar-inverse {
+    background-color: #333;
 }
 
-.navbar-inner {
-    background-color: #333 !important;
+.sidebar-widget form {
+    margin: 0em -1em;
 }
 
 .sidebar .navi > li > a {
@@ -65,8 +70,19 @@ select > option {
     color: black;
 }
 
+input.form-control,
+select.form-control,
+textarea.form-control {
+    /*width: 205px;*/
+    width: 60%;
+    display: inline;
+    display: block;
+}
+
 .widget .padd {
-    padding: 16px 8px;
+    /*margin-bottom: 0;*/
+    /*padding: 1em 0;*/
+    height: 12em;
 }
 
     .widget .padd.padd-tight {
@@ -94,6 +110,11 @@ select > option {
     .btn.btn-notext > i {
         margin-right: 0;
     }
+
+.btn-group{
+    margin: .2em;
+}
+
 
 small {
     font-size: 14px;
@@ -145,13 +166,20 @@ small {
 
 
 .search-query {
-    margin: 2px auto 8px auto !important; 
+    margin: 2px auto 8px auto !important;
 }
 
+.icon-search {
+    color: #FFFFFF;
+}
 
 .form-search {
     min-height: 2em;
 }
+
+.input-group[class*="col-"] {
+    width: 80%;
+    margin: 0 1.5em;}
 
 .user .user-pic {
     display: block;
@@ -165,6 +193,7 @@ small {
 
 .widget-content {
     padding: 1em;
+    margin: 0;
 }
 
 .stacked {
@@ -173,13 +202,14 @@ small {
     margin: auto;
 }
 
-.navbar .brand {
+.navbar .navbar-brand {
     background: url(/content/images/icon.png) no-repeat left center !important;
-    margin-left: -6px;
+    margin: 0 1em;
 }
 
 .navbar .brand-title {
-    margin-left: 30px;
+    margin-left: 2em;
+    color: #FFFFFF;
 }
 
 .navbar-logo img {
@@ -279,23 +309,6 @@ table th > a {
 
 .widget-content.referrer {
     border-width: 0;
-}
-
-.carousel-caption {
-    position: relative;
-    padding: 15px;
-    background: #333333;
-    background: rgba(0, 0, 0, 0.75);
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    margin: 0 auto;
-    height: 140px;
-}
-
-.carousel-control {
-    border-radius: 23px !important;
 }
 
 a {
@@ -441,7 +454,7 @@ a {
     }
 
     .btn-group.pull-right {
-        float: none;
+        float: none !important;
         display: block;
     }
 }
@@ -505,12 +518,15 @@ a {
     .btn-group > .btn {
         display: block;
         width: 7em;
-        margin: .2em;
+    }
+
+    .btn-group.pull-right {
+        margin: .2em 0;
     }
 
     input,
     select {
-        width: 85%;
+        width: 85% !important;
     }
 
     textarea {

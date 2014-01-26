@@ -7,18 +7,20 @@
     -ms-text-shadow: none !important;
     text-shadow: none !important;*/
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
     /*font-weight: 400;*/
 }
 
-.btn, .badge, .modal {
-    -ms-border-radius: *!important;
-    border-radius: !important;
+.btn, .badge, .modal, .modal-dialog, .modal-content,
+input, select {
+    -ms-border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 
 input, select {
-    -ms-border-radius: 4px !important;
-    border-radius: 4px !important;
     padding: 4px !important;
+    /*width: 65% !important;*/
+    display: inline-block !important;
 }
 
 
@@ -159,6 +161,11 @@ a.btn {
     font-weight: 400;
     padding: 3px 6px !important;
     font-size: 13px;
+}
+
+.control-label{
+    font-weight: 400 !important;
+    font-size: 14px;
 }
 
 .badge {
@@ -515,10 +522,6 @@ form {
     background: #000;
 }
 
-    .navbar .brand {
-        color: #eee !important;
-    }
-
     .navbar .container {
         width: 97% !important;
     }
@@ -827,8 +830,8 @@ form {
 /* Matter */
 
 .mainbar .matter {
-    border-top: 1px solid #ddd;
-    padding: 15px 0;
+    border-top: 0px solid #ddd;
+    margin: 2em;
 }
 
 /* Widget */
@@ -1085,7 +1088,7 @@ form {
         margin-left: 0;
     }
 
-    .navbar, .navbar-inner {
+    .navbar {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
@@ -1176,7 +1179,7 @@ form {
         padding-left: 0 !important;
     }
 
-    .navbar, .navbar-inner {
+    .navbar {
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
