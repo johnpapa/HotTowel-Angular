@@ -13,7 +13,7 @@ Hot Towel Angular creates a great starting point for building a Single Page Appl
 ## Installing via the NuGet Package ##
 Hot Towel Angular is a NuGet package that augments an existing empty ASP.NET project. Just install using NuGet and then run!
 
-    Install-Package HotTowel-Angular
+    Install-Package HotTowel.Angular
 
 ## How Do I Build On Hot Towel? ##
 Simply start adding code! 
@@ -25,7 +25,7 @@ Simply start adding code!
 ## Add Rich Data with Breeze ##
 Add rich data features using Breeze to Hot Towel Angular, via NuGet.
 
-    Install-Package HotTowel-Angular-Breeze
+    Install-Package HotTowel.Angular.Breeze
 
 ## Resources ##
 
