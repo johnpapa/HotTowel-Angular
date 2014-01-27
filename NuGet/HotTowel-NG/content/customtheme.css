@@ -58,7 +58,10 @@ input[type="radio"], input[type="checkbox"] {
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     font-size: 13px !important;
 }
-
+.btn.btn-form-md {
+    margin: 0 .5em .2em .5em;
+    width: 9em;
+}
     .btn.btn-mini {
         font-size: 11px !important;
     }
