@@ -504,6 +504,10 @@ a {
     input.form-control, select.form-control, textarea.form-control {
         width: 70%;
     }
+    h3 {
+        font-size: 1.5em !important;
+        line-height: 1.2em !important;
+    }
 }
 
 @media (max-width: 320px) {
@@ -550,11 +554,6 @@ a {
     .user .user-details {
         margin-left: 7em;
         margin-right: .5em;
-    }
-
-    h3 {
-        font-size: 1.5em !important;
-        line-height: 1.2em !important;
     }
 }
 
