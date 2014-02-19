@@ -1,4 +1,4 @@
-﻿(function () { 
+﻿(function () {
     'use strict';
     
     var controllerId = 'shell';
@@ -36,11 +36,11 @@
         );
         
         $rootScope.$on(events.controllerActivateSuccess,
-            function (data) { toggleSpinner(false); }
+            function (event, data) { toggleSpinner(false); }
         );
 
         $rootScope.$on(events.spinnerToggle,
-            function (data) { toggleSpinner(data.show); }
+            function (event, data) { toggleSpinner(data.show); }
         );
     };
 })();
