@@ -92,7 +92,7 @@
                 <div class="row">
                     <div>
                         <p>Kick-Start Your <a href="http://angularjs.org" target="_blank">Angular</a> and <a href="http://breezejs.com" target="_blank">Breeze</a> App</p>
-                        <p>Version 2.1</p>
+                        <p>Version 2.2</p>
                     </div>
                 </div>
                 <div class="row">
@@ -101,17 +101,18 @@
                         <pre class="prettyprint2">&lt;link href="content/breeze.directives.css" rel="stylesheet" /&gt;
 
 &lt;script src="scripts/breeze.debug.js"&gt;&lt;/script&gt;
-&lt;script src="scripts/breeze.angular.q.js"&gt;&lt;/script&gt;
-&lt;script src="scripts/breeze.directives.validation.js"&gt;&lt;/script&gt;
+&lt;script src="scripts/breeze.angular.js"&gt;&lt;/script&gt;
+&lt;script src="scripts/breeze.directives.js"&gt;&lt;/script&gt;
 &lt;script src="scripts/breeze.saveErrorExtensions.js"&gt;&lt;/script&gt;
 
-&lt;script src="app/config.breeze.js"&gt;&lt;/script&gt; 
+&lt;script src="scripts/breeze.to$q.shim.js"&gt;&lt;/script&gt; &lt;!-- Needed only if you are using to$q -->
+
 &lt;script src="app/services/entityManagerFactory.js"&gt;&lt;/script&gt;</pre>
                     </div>
                 </div>
                 <div class="row">
                 	<div>
-                		Update your app.js to include the breeze modules and use breeze.config in app.run.
+                		Update your app.js to include the breeze modules 
                         <pre class="prettyprint2">(function () {
     'use strict';
     
@@ -126,14 +127,14 @@
         'common.bootstrap', // bootstrap dialog wrapper functions
 
         // 3rd Party Modules
-        'breeze.angular.q',  // tells breeze to use $q instead of Q.js
-        'breeze.directives', // breeze validation directive (zValidate)
+        'breeze.angular',    // configures breeze for an angular app
+        'breeze.directives', // contains the breeze validation directive (zValidate)
         'ui.bootstrap'       // ui-bootstrap (ex: carousel, pagination, dialog)
     ]);
     
     // Handle routing errors and success events.
     // Trigger breeze configuration
-    app.run(['$route', 'config.breeze', function ($route) {
+    app.run(['$route', function ($route) {
             // Include $route to kick start the router.
         }]);        
 })();</pre>

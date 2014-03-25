@@ -2,11 +2,14 @@
     'use strict';
     
     var serviceId = 'entityManagerFactory';
-    angular.module('app').factory(serviceId, ['config', emFactory]);
+    angular.module('app').factory(serviceId, ['breeze', 'config', emFactory]);
 
-    function emFactory(config) {
-        breeze.config.initializeAdapterInstance('modelLibrary', 'backingStore', true);
+    function emFactory(breeze, config) {
+        // Convert server-side PascalCase to client-side camelCase property names
         breeze.NamingConvention.camelCase.setAsDefault();
+        // Do not validate when we attach a newly created entity to an EntityManager.
+        // We could also set this per entityManager
+        new breeze.ValidationOptions({ validateOnAttach: false }).setAsDefault();
         
         var serviceName = config.remoteServiceName;
         var metadataStore = new breeze.MetadataStore();
