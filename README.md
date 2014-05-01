@@ -32,3 +32,6 @@ Add rich data features using Breeze to Hot Towel Angular, via NuGet.
 + [SPA Resources](http://johnpapa.net/spa)
 + [Hot Towel Angular on GitHub](https://github.com/johnpapa/HotTowel-NG)
 + [Hot Towel Angular on NuGet] (http://nuget.org/packages/HotTowel-Angular)
+
+## Hot Towel Angular for any Environment 
++ [Hot Towel Angular Seed/Starter](https://github.com/johnpapa/ng-demos/tree/master/hottowel)
