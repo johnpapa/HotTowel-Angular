@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>HotTowel.Angular.Breeze</id>
-        <version>2.2.0</version>
+        <version>2.3.0</version>
         <title>HotTowel.Angular.Breeze</title>
         <authors>John Papa</authors>
         <owners>John Papa</owners>
@@ -24,15 +24,15 @@ Hot Towel: Because you don't want to go to the SPA without one!
         <language>en-US</language>
         <tags>spa jquery angular toastr javascript moment fontawesome breeze webapi</tags>
         <dependencies>
-            <dependency id="Breeze.Server.WebApi2" version="1.4.11" />
-            <dependency id="HotTowel.Angular" version="2.1.0" />
-            <dependency id="Breeze.Angular" version="0.8.3" />
+            <dependency id="Breeze.Server.WebApi2" version="[1.4.12, ]" />
+            <dependency id="HotTowel.Angular" version="[2.3.0, ]" />
+            <dependency id="Breeze.Angular" version="[0.8.6, ]" />
         </dependencies>
     </metadata>
     <files>
-        <file src="NuGet - Breeze Add-on\HotTowel-NG-Z\app\services\entityManagerFactory.js" target="content\app\services\entityManagerFactory.js" />
-        <file src="NuGet - Breeze Add-on\HotTowel-NG-Z\scripts\breeze.saveErrorExtensions.js" target="content\scripts\breeze.saveErrorExtensions.js" />
-        <file src="NuGet - Breeze Add-on\HotTowel-NG-Z\scripts\breeze.to$q.shim.js" target="content\scripts\breeze.to$q.shim.js" />
+        <file src="content\app\services\entityManagerFactory.js" target="content\app\services\entityManagerFactory.js" />
+        <file src="content\scripts\breeze.saveErrorExtensions.js" target="content\scripts\breeze.saveErrorExtensions.js" />
+        <file src="content\scripts\breeze.to$q.shim.js" target="content\scripts\breeze.to$q.shim.js" />
         <file src="tools\install.ps1" target="tools\install.ps1" />
     </files>
 </package>
