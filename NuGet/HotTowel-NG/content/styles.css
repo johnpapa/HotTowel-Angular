@@ -74,9 +74,10 @@ input.form-control,
 select.form-control,
 textarea.form-control {
     /*width: 205px;*/
-    width: 60%;
     display: inline;
     display: block;
+    width: 50%;
+    max-width: 30em;
 }
 
 .widget .padd {
@@ -231,7 +232,7 @@ small {
 
 .page-splash {
     z-index: 99999 !important;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
@@ -269,6 +270,11 @@ small {
         margin: 30% auto 0 auto;
         font-size: 200%;
     }
+
+.flag-haschanges {
+    position: fixed !important;
+    display: inline;
+}
 
 .fa-asterisk.fa-asterisk-large {
     font-size: 180%;
@@ -393,6 +399,7 @@ a {
 }
 
 /*#endregion*/
+
 /*#region Angular ng-show dissolve animation */
 .dissolve-animation.ng-hide-add, .dissolve-animation.ng-hide-remove {
     display: inline!important;
@@ -414,9 +421,7 @@ a {
         .dissolve-animation.ng-hide {
             opacity: 0;
         }
-
 /*#endregion */
-
 
 /*#region toastr */
 #toast-container.toast-top-full-width > div, #toast-container.toast-bottom-full-width > div {
@@ -496,6 +501,16 @@ a {
     }
 }
 
+@media (max-width: 480px) {
+    input.form-control, select.form-control, textarea.form-control {
+        width: 70%;
+    }
+    h3 {
+        font-size: 1.5em !important;
+        line-height: 1.2em !important;
+    }
+}
+
 @media (max-width: 320px) {
     .today-datas li {
         padding: 1em .5em;
@@ -533,18 +548,13 @@ a {
         width: 80%;
     }
 
-    .img-polaroid.user-pic {
+    .img-thumbnail.user-pic {
         width: 5em;
     }
 
     .user .user-details {
         margin-left: 7em;
         margin-right: .5em;
-    }
-
-    h3 {
-        font-size: 1.5em !important;
-        line-height: 1.2em !important;
     }
 }
 
