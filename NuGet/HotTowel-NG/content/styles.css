@@ -74,10 +74,9 @@ input.form-control,
 select.form-control,
 textarea.form-control {
     /*width: 205px;*/
+    width: 60%;
     display: inline;
     display: block;
-    width: 50%;
-    max-width: 30em;
 }
 
 .widget .padd {
@@ -232,7 +231,7 @@ small {
 
 .page-splash {
     z-index: 99999 !important;
-    position: fixed !important;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -270,11 +269,6 @@ small {
         margin: 30% auto 0 auto;
         font-size: 200%;
     }
-
-.flag-haschanges {
-    position: fixed !important;
-    display: inline;
-}
 
 .fa-asterisk.fa-asterisk-large {
     font-size: 180%;
@@ -399,28 +393,30 @@ a {
 }
 
 /*#endregion*/
-
 /*#region Angular ng-show dissolve animation */
-.dissolve-animation.ng-hide-remove,
-.dissolve-animation.ng-hide-add {
-    position: fixed !important;
-    display: inline !important;
-    -webkit-transition: 0.5s linear all;
-    -moz-transition: 0.5s linear all;
-    -o-transition: 0.5s linear all;
-    transition: 0.5s linear all;
+.dissolve-animation.ng-hide-add, .dissolve-animation.ng-hide-remove {
+    display: inline!important;
 }
 
-    .dissolve-animation.ng-hide-remove.ng-hide-remove-active,
-    .dissolve-animation.ng-hide-add {
-        opacity: 1;
-    }
+.dissolve-animation.ng-hide-remove,
+.dissolve-animation.ng-hide-add {
+    -webkit-transition: 0.8s linear all;
+    -moz-transition: 0.8s linear all; 
+    -o-transition: 0.8s linear all;
+    transition: 0.8s linear all;
+}
 
-        .dissolve-animation.ng-hide-add.ng-hide-add-active,
-        .dissolve-animation.ng-hide-remove {
+ .dissolve-animation {
+            opacity: 1;
+        }
+    
+
+        .dissolve-animation.ng-hide {
             opacity: 0;
         }
+
 /*#endregion */
+
 
 /*#region toastr */
 #toast-container.toast-top-full-width > div, #toast-container.toast-bottom-full-width > div {
@@ -500,16 +496,6 @@ a {
     }
 }
 
-@media (max-width: 480px) {
-    input.form-control, select.form-control, textarea.form-control {
-        width: 70%;
-    }
-    h3 {
-        font-size: 1.5em !important;
-        line-height: 1.2em !important;
-    }
-}
-
 @media (max-width: 320px) {
     .today-datas li {
         padding: 1em .5em;
@@ -547,13 +533,18 @@ a {
         width: 80%;
     }
 
-    .img-thumbnail.user-pic {
+    .img-polaroid.user-pic {
         width: 5em;
     }
 
     .user .user-details {
         margin-left: 7em;
         margin-right: .5em;
+    }
+
+    h3 {
+        font-size: 1.5em !important;
+        line-height: 1.2em !important;
     }
 }
 
