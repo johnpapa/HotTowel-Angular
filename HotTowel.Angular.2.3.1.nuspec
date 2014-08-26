@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>HotTowel.Angular</id>
+        <version>2.3.1</version>
+        <title>HotTowel.Angular</title>
+        <authors>John Papa</authors>
+        <owners>John Papa</owners>
+        <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+        <projectUrl>https://github.com/johnpapa/HotTowel-NG</projectUrl>
+        <iconUrl>http://www.johnpapa.net/wp-content/images/towelicon.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Want to build a SPA but can't decide where to start? Use Hot Towel and in seconds you'll have a SPA and all the tools you need to build on it! 
+
+Hot Towel Angular creates a great starting point for building a SPA using Angular for data bindings, navigation and UI, and Breeze for data management.
+
+Hot Towel Angular also adds pop-up toasts with Toastr, date formatting with Moment, and styling with Twitter Bootstrap.
+
+Hot Towel: Because you don't want to go to the SPA without one!
+
+* Hot Towel is shown in the SPA with Angular and Breeze course at www.pluralsight.com</description>
+        <summary>Instant Angular App!</summary>
+        <releaseNotes>Updated for Bootstrap 3. 
+
+Note: This package manually adds Angular-UI-Bootstrap because existing package for it puts scripts in root folder.</releaseNotes>
+        <copyright>Copyright © 2014 John Papa</copyright>
+        <language>en-US</language>
+        <tags>spa jquery angular toastr javascript moment fontawesome hottowel</tags>
+        <dependencies>
+            <dependency id="FontAwesome" version="[4.1.0, ]" />
+            <dependency id="jQuery" version="[2.1.1, ]" />
+            <dependency id="Moment.js" version="[2.6.0, ]" />
+            <dependency id="Spin.js" version="[2.0, ]" />
+            <dependency id="toastr" version="[2.0.3, ]" />
+            <dependency id="Bootstrap" version="[3.1.1, ]" />
+            <dependency id="AngularJS.Route" version="[1.2.22, ]" />
+            <dependency id="AngularJS.Animate" version="[1.2.22, ]" />
+            <dependency id="AngularJS.Sanitize" version="[1.2.22, ]" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="content\app\admin\admin.html" target="content\app\admin\admin.html" />
+        <file src="content\app\admin\admin.js" target="content\app\admin\admin.js" />
+        <file src="content\app\common\bootstrap\bootstrap.dialog.js" target="content\app\common\bootstrap\bootstrap.dialog.js" />
+        <file src="content\app\common\common.js" target="content\app\common\common.js" />
+        <file src="content\app\common\logger.js" target="content\app\common\logger.js" />
+        <file src="content\app\common\spinner.js" target="content\app\common\spinner.js" />
+        <file src="content\app\dashboard\dashboard.html" target="content\app\dashboard\dashboard.html" />
+        <file src="content\app\dashboard\dashboard.js" target="content\app\dashboard\dashboard.js" />
+        <file src="content\app\layout\shell.html" target="content\app\layout\shell.html" />
+        <file src="content\app\layout\shell.js" target="content\app\layout\shell.js" />
+        <file src="content\app\layout\sidebar.html" target="content\app\layout\sidebar.html" />
+        <file src="content\app\layout\sidebar.js" target="content\app\layout\sidebar.js" />
+        <file src="content\app\layout\topnav.html" target="content\app\layout\topnav.html" />
+        <file src="content\app\layout\widgetheader.html" target="content\app\layout\widgetheader.html" />
+        <file src="content\app\services\datacontext.js" target="content\app\services\datacontext.js" />
+        <file src="content\app\services\directives.js" target="content\app\services\directives.js" />
+        <file src="content\app\app.js" target="content\app\app.js" />
+        <file src="content\app\config.exceptionHandler.js" target="content\app\config.exceptionHandler.js" />
+        <file src="content\app\config.js" target="content\app\config.js" />
+        <file src="content\app\config.route.js" target="content\app\config.route.js" />
+        <file src="content\content\images\AngularJS-small.png" target="content\content\images\AngularJS-small.png" />
+        <file src="content\content\images\breezelogo.png" target="content\content\images\breezelogo.png" />
+        <file src="content\content\images\icon.png" target="content\content\images\icon.png" />
+        <file src="content\content\customtheme.css" target="content\content\customtheme.css" />
+        <file src="content\content\ie10mobile.css" target="content\content\ie10mobile.css" />
+        <file src="content\content\styles.css" target="content\content\styles.css" />
+        <file src="content\scripts\ui-bootstrap-tpls-0.10.0.js" target="content\scripts\ui-bootstrap-tpls-0.10.0.js" />
+        <file src="content\scripts\ui-bootstrap-tpls-0.10.0.min.js" target="content\scripts\ui-bootstrap-tpls-0.10.0.min.js" />
+        <file src="content\favicon.ico" target="content\favicon.ico" />
+        <file src="content\index.html" target="content\index.html" />
+        <file src="tools\install.ps1" target="tools\install.ps1" />
+    </files>
+</package>
