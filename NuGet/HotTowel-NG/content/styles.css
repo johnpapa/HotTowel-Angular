@@ -401,23 +401,24 @@ a {
 /*#endregion*/
 
 /*#region Angular ng-show dissolve animation */
-.dissolve-animation.ng-hide-remove,
-.dissolve-animation.ng-hide-add {
-    position: fixed !important;
-    display: inline !important;
-    -webkit-transition: 0.5s linear all;
-    -moz-transition: 0.5s linear all;
-    -o-transition: 0.5s linear all;
-    transition: 0.5s linear all;
+.dissolve-animation.ng-hide-add, .dissolve-animation.ng-hide-remove {
+    display: inline!important;
 }
 
-    .dissolve-animation.ng-hide-remove.ng-hide-remove-active,
-    .dissolve-animation.ng-hide-add {
-        opacity: 1;
-    }
+.dissolve-animation.ng-hide-remove,
+.dissolve-animation.ng-hide-add {
+    -webkit-transition: 0.8s linear all;
+    -moz-transition: 0.8s linear all; 
+    -o-transition: 0.8s linear all;
+    transition: 0.8s linear all;
+}
 
-        .dissolve-animation.ng-hide-add.ng-hide-add-active,
-        .dissolve-animation.ng-hide-remove {
+ .dissolve-animation {
+            opacity: 1;
+        }
+    
+
+        .dissolve-animation.ng-hide {
             opacity: 0;
         }
 /*#endregion */
