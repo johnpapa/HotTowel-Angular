@@ -146,7 +146,7 @@
                     e.preventDefault();
                     // Learning Point: $anchorScroll works, but no animation
                     //$anchorScroll();
-                    $('body').animate({ scrollTop: 0 }, 500);
+                    $('html, body').animate({ scrollTop: 0 }, 500);
                 });
 
                 function toggleIcon() {
