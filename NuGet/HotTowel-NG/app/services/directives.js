@@ -24,7 +24,7 @@
 
 
     app.directive('ccSidebar', function () {
-        // Opens and clsoes the sidebar menu.
+        // Opens and closes the sidebar menu.
         // Usage:
         //  <div data-cc-sidebar>
         // Creates:
